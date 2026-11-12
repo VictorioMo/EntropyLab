@@ -1,0 +1,63 @@
+# ==========================
+# .NET / MAUI
+# ==========================
+
+**/bin/
+**/obj/
+**/.vs/
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==========================
+# Angular / Node.js
+# ==========================
+
+**/node_modules/
+**/dist/
+**/.angular/
+**/coverage/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================
+# IDE / Editor
+# ==========================
+
+.vscode/
+.idea/
+*.swp
+
+# ==========================
+# Temporary Files
+# ==========================
+
+*.tmp
+*.temp
+*.log
+*.bak
+
+# ==========================
+# Environment / Secrets
+# ==========================
+
+.env
+.env.*
+!.env.example
+
+*.keystore
+*.jks
+*.p12
+*.pfx
+
+# ==========================
+# Operating Systems
+# ==========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
