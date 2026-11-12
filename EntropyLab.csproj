@@ -60,13 +60,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiAsset Remove="Resources\Raw\wwwroot\favicon.ico" />
-	  <MauiAsset Remove="Resources\Raw\wwwroot\index.html" />
-	  <MauiAsset Remove="Resources\raw\wwwroot\main-NFNV553P.js" />
-	  <MauiAsset Remove="Resources\raw\wwwroot\scripts\HybridWebView.js" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.8" />
 	</ItemGroup>
