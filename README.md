@@ -13,7 +13,7 @@ A cross-platform random number generator built with **.NET MAUI, Angular, and C#
 - 🌐 **True Random** — Real-world randomness via RANDOM.ORG.
 - 🎯 Customizable minimum and maximum values.
 - 📜 History of the last 10 results, labeled by source.
-- 💜 Responsive cyberpunk-themed UI.
+- 💜 Responsive UI.
 
 ### 🛠️ Tech Stack
 - **Backend:** .NET MAUI 9 / C#
