@@ -2,6 +2,12 @@
 
 A cross-platform random number generator built with **.NET MAUI, Angular, and C#**, featuring a cyberpunk-inspired interface.
 
+### 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/app.png" width="350" alt="EntropyLab Android Screenshot"/>
+</p>
+
 ### ✨ Features
 - 🔢 **Pseudo Random** — Cryptographically secure generation using C#.
 - 🌐 **True Random** — Real-world randomness via RANDOM.ORG.
@@ -23,9 +29,3 @@ A cross-platform random number generator built with **.NET MAUI, Angular, and C#
 
 ### 👨‍💻 Author
 **Victorio Moraru**
-
-### 📸 Screenshots
-
-<p align="center">
-  <img src="screenshots/app.png" width="250"/>
-</p>
