@@ -2,9 +2,50 @@
   <h1>🎲 EntropyLab</h1>
   <p>Explore the world of randomness!</p>
 
-  <button (click)="generateNumber()">
-    Generate Number
-  </button>
+  <div class="controls">
+    <label>
+      Minimum:
+      <input type="number"
+             step="1"
+             [value]="min"
+             #minInput
+             (input)="min = minInput.valueAsNumber" />
+    </label>
 
-  <p>Result: {{ number() ?? '—' }}</p>
+    <label>
+      Maximum:
+      <input type="number"
+             step="1"
+             [value]="max"
+             #maxInput
+             (input)="max = maxInput.valueAsNumber" />
+    </label>
+
+    <div class="actions">
+      <button (click)="generateNumber()">Pseudo Random</button>
+      <button (click)="generateTrueNumber()"
+              [disabled]="isLoading()">
+        {{ isLoading() ? '⏳ Generating...' : '🌐 True Random' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="result-panel">
+    <span>GENERATED NUMBER</span>
+    <div class="result-number">{{ number() ?? '—' }}</div>
+  </div>
+
+  <h2>Generation History</h2>
+
+  <ul>
+    @for (entry of history(); track $index) {
+    <li>
+      <strong>{{ entry.value }}</strong>
+      <span [class]="entry.source === 'True' ? 'true-random' : 'pseudo-random'">
+        {{ entry.source }}
+      </span>
+    </li>
+    }
+  </ul>
+
 </main>
